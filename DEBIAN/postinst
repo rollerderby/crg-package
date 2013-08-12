@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdocs
+if [ "$1" = "configure" ]; then
+  if [ -d /usr/doc -a ! -e /usr/doc/crg-scoreboard -a -d /usr/share/doc/crg-scoreboard ]; then
+    ln -sf ../share/doc/crg-scoreboard /usr/doc/crg-scoreboard
+  fi
+fi
+# End automatically added section
+insserv /etc/init.d/crg-scoreboard
+/etc/init.d/crg-scoreboard start
+sleep 2
+/etc/init.d/crg-scoreboard status

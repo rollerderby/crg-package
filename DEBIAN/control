@@ -1,0 +1,10 @@
+Package: crg-scoreboard
+Version: 0.3-beta5-overlay
+Section: web
+Priority: optional
+Architecture: all
+Depends: dash, openjdk-6-jre | openjdk-6-jre-headless | openjdk-7-jre | openjdk-7-jre-headless | gcj-4.4-jre | gcj-4.4-jre-headless | sun-java6-jre | sun-java6-bin | default-jre | default-jre-headless, procps, insserv
+Maintainer: Jon Fox <crgscorespam@sacredregion.com>
+Description: CRG Scoreboard
+ This package installs the Carolina Roller Girls scoreboard
+ on a linux system in /usr/local/crg-scoreboard
